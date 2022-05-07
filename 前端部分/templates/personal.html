@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="x-admin-sm" lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>个人信息</title>
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/personal.css?id=1}" />
+
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入文本编辑器样式文件 -->
+    <link rel="stylesheet" th:href="@{/editor.md/css/editormd.css}" />
+    <!-- 引入js代码 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/personal.js?id=2}"></script>
+
+</head>
+
+<body>
+    <div class="personal_body">
+        <div class="fl left">
+            <div class="left_top">个人中心</div>
+            <div class="left_bottom">
+                <ul>
+                    <li class="first"><span class="iconfont "></span>个人信息</li>
+                    <li class="second"><span class="iconfont "></span>管理文章</li>
+                    <li class="third"><span class="iconfont "></span>修改密码</li>
+                    <li class="fourth"><span class="iconfont "></span>我的头像</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl right">
+            <div class="right_top">
+                <div class="top_right">
+                    <a href="../">
+                        <div class="name fr">返回首页</div>
+                    </a>
+                </div>
+            </div>
+            <div class="right_bottom1">
+                <div class="header">
+                    <div class="topic">修改信息</div>
+                </div>
+
+                <div class="row1">
+                    <p>用户名:</p>
+                    <div class="uname"></div>
+                    <input class="changeUname" type="text">
+                </div>
+                <div class="row2">
+                    <p>昵称:</p><input class="fl myname" type="text">
+                </div>
+                <div class="row3">
+                    <p>我的签名:</p><textarea placeholder="设置你的个性签名吧!"></textarea>
+                </div>
+                <div class="row4">
+                    <p>性别:</p>
+                    <div class="sex"><button index="1" class="male">男</button><button index="2" class="female">女</button><button index="3" class="secret">保密</button></div>
+                </div>
+                <div class="row5">
+                    <p>年龄:</p>
+                    <div class="uage">
+                        <input class="change_age" type="number" value="">
+                    </div>
+                </div>
+                <div class="row6">
+                    <button class="store">保存</button>
+                </div>
+            </div>
+            <div class="right_bottom2">
+                <div class="header">
+                    <div class="topic">管理文章</div>
+                    <a href="../article/edit" target="_blank"><button class="publish">发表新文章</button></a>
+                </div>
+                <div class="management">
+                    <table cellspacing="0" align="left">
+                        <thead align="left">
+                            <th>我的文章</th>
+                            <th>发表时间</th>
+                            <th>评论数</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="right_bottom3">
+                <div class="header">
+                    <div class="topic">修改密码</div>
+                    <div class="row7">
+                        <p>请输入旧密码:</p><input class="oldPwd" type="password">
+                    </div>
+                    <div class="row8">
+                        <p>请输入新密码:</p><input class="newPwd" type="password">
+                    </div>
+                    <div class="row9">
+                        <p>请再次输入新密码:</p><input class="newPwd2" type="password">
+                    </div>
+                    <div style="position: relative;" class="row10">
+                        <p>请输入验证码:</p><input class="verifyCode" type="text" name="" id="">
+                        <button class="code">获取验证码</button>
+                        <div id="btn"></div>
+                    </div>
+                    <div class="row11">
+                        <button class="storage">保存</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right_bottom4">
+                <div class="header">
+                    <div class="topic">更换头像</div>
+                </div>
+                <div class="photo_body">
+                    <form enctype="multipart/form-data" id="uploadFileForm">
+                        <label class="first-change-lb" onchange="showFilename()" for="file">
+                        <img src="" class="showPhoto">
+                        <!-- for id -->
+                        <img class="first-change-lb_img" src="data:image/png;base64,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"
+                             alt="">
+                        <span>选择本地图片</span>
+                        <input style="display: none;" id="file" type="file" name="img">
+                    </label>
+                    </form>
+                    <p class="filename"></p>
+                    <p class="tips">请上传小于2M的图片，支持jpg、jpeg、bmp、png格式</p>
+                    <img class="photo" th:src="@{/img/default.jpg}">
+                    <p class="currentPhoto">当前头像</p>
+                    <button class="storePhoto">更新</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+</html>

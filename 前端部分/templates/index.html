@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>礼赞新时代，追梦复兴路</title>
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" th:href="@{/download/icon/iconfont.css}">
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{css/base.css}" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common.css}" />
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/swiper.min.css}" />
+    <!-- 引入js代码 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/common.js}"></script>
+
+</head>
+
+<body>
+    <!-- 导航栏开始 -->
+    <div class="nav">
+        <div class="nav_nav w">
+            <ul class="fl">
+                <li><a href="/">首页</a></li>
+                <li class="callBack"><a href="javascript:;">回顾百年党史</a></li>
+                <li class="dd newTime"><a href="javascript:;">礼赞全新时代</a></li>
+                <li class="dd">
+                    <a href="javascript:;"><img th:src="@{/img/login-logo.png}" alt="图片无法显示"></a>
+                </li>
+                <li class="dd"><a href="/news" target="_blank">时事新闻</a></li>
+                <li class="dd hoHai"><a href="javascript:;">红色河海</a></li>
+                <li class="login-register"><a href="/login" target="_blank">登录/注册</a></li>
+            </ul>
+            <div class="information">
+                <a target="_blank" href="/account/home">
+                    <li class="change"><span class="iconfont icon-denglu"></span>修改资料></li>
+                </a>
+                <li class="log_out"><span class="iconfont icon-tuichudenglu"></span>退出登录></li>
+            </div>
+        </div>
+
+    </div>
+    <!-- 导航栏结束 -->
+
+    <!-- 首页开始 -->
+    <section class="dd home_body w">
+    </section>
+    <!-- 首页结束 -->
+
+    <!-- 回顾百年党史开始 -->
+    <section class="learn_body w">
+        <div class="biaoti_head w">
+            <div class="dash_left"></div>
+            <div class="biaoti_left"></div>
+            <div class="dot_left"></div>
+            <div class="biaoti">回顾百年党史</div>
+            <div class="dot_right"></div>
+            <div class="biaoti_right"></div>
+            <div class="dash_right"></div>
+        </div>
+        <div class="back">
+            <li class="backToTop"><span class="iconfont icon-huidaodingbu toTop"></span>回到顶部</li>
+        </div>
+        <a style="top: -40px;" class="a_history" name="history"></a>
+        <div class="container2">
+            <div class="card card1">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%85%A8%E5%9B%BD%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A/1009159?fromtitle=%E4%B8%AD%E5%85%B1%E4%B8%80%E5%A4%A7&fromid=3583034&fr=aladdin#reference-[3]-55587-wrap">
+                        <img th:src="@{/img/history_01.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>中共一大</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%85%A8%E5%9B%BD%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A/1009159?fromtitle=%E4%B8%AD%E5%85%B1%E4%B8%80%E5%A4%A7&fromid=3583034&fr=aladdin#reference-[3]-55587-wrap">
+                        <p>中国共产党第一次全国代表大会于1921年7月23日至8月初在上海法租界望志路106号（现兴业路76号）和浙江嘉兴召开。上海的李达、李汉俊，北京的张国焘、刘仁静，武汉的董必武、陈潭秋，长沙的毛泽东、何叔衡，广州的陈公博，济南的王尽美、邓恩铭，旅日的周佛海，以及由陈独秀指定的代表包惠僧出席会议，代表全国50多名党员。共产国际代表马林和尼克尔斯基也出席了大会。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce1">
+                    <p>中共一大</p>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E9%95%BF%E5%BE%81/22312">
+                        <img th:src="@{/img/history_02.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>万里长征</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E9%95%BF%E5%BE%81/22312">
+                        <p>
+                            长征是人类历史上的伟大奇迹，中央红军共进行了380余次战斗，攻占700多座县城，红军牺牲了营以上干部多达430余人，平均年龄不到30岁，共击溃国民党军数百个团，期间共经过14个省，翻越18座大山，跨过24条大河，走过荒草地，翻过雪山，行程约二万五千里，红一方面军于1935年10月到达陕北革命根据地，与陕北红军胜利会师。1936年10月，红二、四方面军到达甘肃会宁地区，同红一方面军会师。红军三大主力会师，标志着万里长征的胜利结束。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce2">
+                    <p>万里长征</p>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E4%B8%83%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE?fromtitle=%E4%B8%83%E5%B1%8A%E4%BA%8C%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=4416718">
+                        <img th:src="@{/img/history_03.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>七届二中全会</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E4%B8%83%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE?fromtitle=%E4%B8%83%E5%B1%8A%E4%BA%8C%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=4416718">
+                        <p>
+                            中国共产党第七届中央委员会第二次全体会议（中国共产党七届二中全会、中共七届二中全会）于1949年3月5日—13日在河北省平山县西柏坡举行，出席这次全会的有中央委员34人，中央候补委员19人；列席会议的11人，由毛泽东、刘少奇、周恩来、朱德、任弼时组成的主席团主持了此次会议。七届二中全会是解放战争时期中共召开的唯一的一次中央全会，会议作出的各项政策规定，不仅对迎接中国革命在全国的胜利，而且对新中国的建设事业，都具有重要指导作用。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce3">
+                    <p>七届二中全会</p>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="card card4">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%88%90%E7%AB%8B?fromtitle=%E6%96%B0%E4%B8%AD%E5%9B%BD%E6%88%90%E7%AB%8B&fromid=9550162">
+                        <img th:src="@{/img/history_04.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>新中国成立</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%88%90%E7%AB%8B?fromtitle=%E6%96%B0%E4%B8%AD%E5%9B%BD%E6%88%90%E7%AB%8B&fromid=9550162">
+                        <p>1949年10月1日，中华人民共和国中央人民政府成立。此前，中国人民政治协商会议第一届全体会议于9月21日至30日举行。会议通过起临时宪法作用的《中国人民政治协商会议共同纲领》。10月1日下午2时，中央人民政府委员会举行第一次会议。下午3时，庆祝中华人民共和国中央人民政府成立典礼在北京天安门广场隆重举行。毛泽东主席宣告中央人民政府成立。之后，举行盛大阅兵仪式和群众游行。12月2日，中央人民政府委员会第四次会议决定，每年的10月1日为中华人民共和国国庆日。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce4">
+                    <p>新中国成立</p>
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE?fromtitle=%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=390224">
+                        <img th:src="@{/img/history_05.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>十一届三中全会</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE?fromtitle=%E5%8D%81%E4%B8%80%E5%B1%8A%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A&fromid=390224">
+                        <p>
+                            出席会议的中央委员169人，候补中央委员112人。全会冲破长期“左”的错误和严重束缚，彻底否定“两个凡是”的错误方针，高度评价关于真理标准讨论，重新确立了党的实事求是的思想路线。全会停止使用“以阶级斗争为纲”的口号，决定将全党的工作重点和全国人民的注意力转移到社会主义现代化建设上，提出了改革开放的任务。全会指出，实现四个现代化是一场广泛、深刻的革命，要采取一系列新的重大的经济措施，对经济管理体制和经营管理方法进行认真改革，在自力更生的基础上积极发展同世界各国平等互利的经济合作。全会强调要充分发扬民主，健全全党的民主集中制，健全党规党法，正确对待毛泽东的历史地位和毛泽东思想的科学体系。全会增选了中央领导机构成员，邓小平实际上成为党的中央领导集体的核心。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce5">
+                    <p>十一届三中全会</p>
+                </div>
+            </div>
+            <div class="card card6">
+                <div class="imgBx">
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89/929612">
+                        <img th:src="@{/img/history_06.png}" alt="">
+                    </a>
+                </div>
+                <div class="content2">
+                    <h2>中国特色社会主义</h2>
+                    <a target="_blank" href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89/929612">
+                        <p>
+                            中国特色社会主义道路，是在中国共产党的领导下，立足基本国情，以经济建设为中心，坚持四项基本原则，坚持改革开放，解放和发展社会生产力，建设中国特色社会主义市场经济、社会主义民主政治、社会主义先进文化、社会主义和谐社会、社会主义生态文明，促进人的全面发展，逐步实现全体人民共同富裕，建设富强、民主、文明、和谐、美丽的社会主义现代化强国。中国特色社会主义道路，是党和人民100年奋斗、创造、积累的根本成就，是引领中国进步、增进人民福祉、实现民族复兴的康庄大道。
+                        </p>
+                    </a>
+                </div>
+                <div class="introduce introduce6">
+                    <p>中国特色社会主义</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 回顾百年党史结束 -->
+    <!-- 礼赞全新时代开始 -->
+    <section class="tribute_body w">
+        <a style="top: -110px;" class="a_tribute" name="tribute"></a>
+        <div style="padding-top: 0;padding-bottom: 120px;" class="biaoti_head w">
+            <div style="top: 19px;" class="dash_left"></div>
+            <div class="biaoti_left"></div>
+            <div style="top: 16px;" class="dot_left"></div>
+            <div class="biaoti">礼赞全新时代</div>
+            <div style="top: 16px;" class="dot_right"></div>
+            <div class="biaoti_right"></div>
+            <div style="top: 19px;" class="dash_right"></div>
+        </div>
+        <div class="tribution">
+            <div style="margin-bottom: 50px;" class="tribution_top w">
+                <ul>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E4%B8%9C%E9%A3%8E-21%E5%BC%B9%E9%81%93%E5%AF%BC%E5%BC%B9?fromtitle=%E4%B8%9C%E9%A3%8E-21&fromid=9618960" target="_blank" title="东风21D，专打航母的弹道导弹">
+                            <div class="box"><img th:src="@{/img/achievements_01.jpg}"></div>
+                        </a>
+                        <h3>东风21D，专打航母的弹道导弹</h3>
+                        <a href="https://baike.baidu.com/item/%E4%B8%9C%E9%A3%8E-21%E5%BC%B9%E9%81%93%E5%AF%BC%E5%BC%B9?fromtitle=%E4%B8%9C%E9%A3%8E-21&fromid=9618960">
+                            <p>东风-21弹道导弹，是中国人民解放军火箭军装备的一型陆基机动式中程弹道导弹，是中国第二代中程地对地战略导弹，也是中国第一代固体燃料弹道导弹。</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92
+                        " target="_blank" title="港澳回归，一雪百年耻辱">
+                            <div class="box"><img th:src="@{/img/achievements_02.jpg}"></div>
+                        </a>
+                        <h3>港澳回归，一雪百年耻辱</h3>
+                        <a href="https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92
+                            ">
+                            <p>1997年6月30日午夜至7月1日凌晨，香港会议展览中心新翼灯火辉煌，举世瞩目的中英两国政府香港政权交接仪式在这里的五楼大会堂隆重举行。</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E4%B8%89%E5%B3%A1%E5%A4%A7%E5%9D%9D/496331" target="_blank" title="三峡大坝，世界第一">
+                            <div class="box"><img th:src="@{/img/achievements_03.jpg}"></div>
+                        </a>
+                        <h3>三峡大坝，世界第一</h3>
+                        <a href="https://baike.baidu.com/item/%E4%B8%89%E5%B3%A1%E5%A4%A7%E5%9D%9D/496331">
+                            <p>三峡大坝，位于中国湖北省宜昌市三斗坪镇境内，距下游葛洲坝水利枢纽工程38公里，是当今世界最大的水利发电工程。</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/2008%E5%B9%B4%E5%8C%97%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A?fromtitle=%E5%8C%97%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A&fromid=335299" target="_blank" title="北京奥运，世界最好的奥运会，中国是奥运会金牌榜绝对王者">
+                            <div class="box"><img th:src="@{/img/achievements_04.jpg}"></div>
+                        </a>
+                        <h3>北京奥运，世界最好的奥运会，中国是奥运会金牌榜绝对王者</h3>
+                        <a href="https://baike.baidu.com/item/2008%E5%B9%B4%E5%8C%97%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A?fromtitle=%E5%8C%97%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A&fromid=335299">
+                            <p>2008年，北京成功举办了第29届夏季奥运会，实现了中华民族的百年梦想，中国代表团取得了51枚金牌、100枚奖牌的优异成绩。</p>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="tribution_top w">
+                <ul>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E9%9D%92%E8%97%8F%E9%93%81%E8%B7%AF/128400" target="_blank" title="青藏铁路，世界屋脊上的巨龙">
+                            <div class="box"><img th:src="@{/img/achievements_05.jpg}"></div>
+                        </a>
+                        <h3>青藏铁路，世界屋脊上的巨龙</h3>
+                        <a href="https://baike.baidu.com/item/%E9%9D%92%E8%97%8F%E9%93%81%E8%B7%AF/128400">
+                            <p>青藏铁路，简称青藏线，是一条连接青海省西宁市至西藏自治区拉萨市的国铁Ⅰ级铁路，是中国新世纪四大工程之一，是通往西藏腹地的第一条铁路，也是世界上海拔最高、线路最长的高原铁路。</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8D%81%E5%9B%BD%E9%9B%86%E5%9B%A2?fromtitle=G20&fromid=6474052" target="_blank" title="杭州G20峰会，促进世界经济可持续发展">
+                            <div class="box"><img th:src="@{/img/achievements_06.jpg}"></div>
+                        </a>
+                        <h3>杭州G20峰会，促进世界经济可持续发展</h3>
+                        <a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8D%81%E5%9B%BD%E9%9B%86%E5%9B%A2?fromtitle=G20&fromid=6474052">
+                            <p>2016年9月4日-5日在中国杭州召开的G20峰会，杭州G20峰会主题：构建创新、活力、联动、包容的世界经济。国际峰会落户杭州将拉动当地基础设施建设，促进当地外向型经济和国际化水平。</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/500%E7%B1%B3%E5%8F%A3%E5%BE%84%E7%90%83%E9%9D%A2%E5%B0%84%E7%94%B5%E6%9C%9B%E8%BF%9C%E9%95%9C/2504551?fromtitle=%E4%B8%AD%E5%9B%BD%E5%A4%A9%E7%9C%BC&fromid=20120630" target="_blank" title="中国天眼，世界最大的望远镜">
+                            <div class="box"><img th:src="@{/img/achievements_07.jpg}"></div>
+                        </a>
+                        <h3>中国天眼，世界最大的望远镜</h3>
+                        <a href="https://baike.baidu.com/item/500%E7%B1%B3%E5%8F%A3%E5%BE%84%E7%90%83%E9%9D%A2%E5%B0%84%E7%94%B5%E6%9C%9B%E8%BF%9C%E9%95%9C/2504551?fromtitle=%E4%B8%AD%E5%9B%BD%E5%A4%A9%E7%9C%BC&fromid=20120630">
+                            <p>500米口径球面射电望远镜，简称FAST，位于贵州省黔南布依族苗族自治州平塘县克度镇大窝凼的喀斯特洼坑中，工程为国家重大科技基础设施。</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://baike.baidu.com/item/%E6%B8%AF%E7%8F%A0%E6%BE%B3%E5%A4%A7%E6%A1%A5/2836012" target="_blank" title="港珠澳跨海大桥，超大的建筑规模、顶尖的建造技术，闻名世界">
+                            <div class="box"><img th:src="@{/img/achievements_08.jpg}"></div>
+                        </a>
+                        <h3>港珠澳跨海大桥，超大的建筑规模、顶尖的建造技术，闻名世界</h3>
+                        <a href="https://baike.baidu.com/item/%E6%B8%AF%E7%8F%A0%E6%BE%B3%E5%A4%A7%E6%A1%A5/2836012">
+                            <p>港珠澳大桥是中国境内一座连接香港、珠海和澳门的桥隧工程。港珠澳大桥是中国境内一座连接香港、珠海和澳门的桥隧工程</p>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- 礼赞全新时代结束 -->
+    <!-- 时事新闻开始 -->
+    <section class="news w">
+        <a style="top: -30px;" class="a_news" name="news"></a>
+        <div class="news_news w">
+            <div style="padding-top: 0;padding-bottom: 10px;" class="biaoti_head w">
+                <div style="top: 19px;" class="dash_left"></div>
+                <div class="biaoti_left"></div>
+                <div style="top: 16px;" class="dot_left"></div>
+                <div class="biaoti">时事新闻</div>
+                <div style="top: 16px;" class="dot_right"></div>
+                <div class="biaoti_right"></div>
+                <div style="top: 19px;" class="dash_right"></div>
+            </div>
+            <div class="news_body w">
+                <div class="lf">
+                    <div class="news_title">
+                        <a href=""></a>
+                        <h2>国内</h2>
+                    </div>
+                    <div class="left_body">
+                        <a target="_blank" href="single_new.html">
+                            <div class="title1_decoration"></div>
+                            <div class="title1">市民急需的食品、母婴、药品等供应方面能否满足？上海这场发布会上回应了</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 67px;" class="title1_decoration"></div>
+                            <div class="title1">大数据如何支持做好上海后续防疫工作？专家解答</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 117px;" class="title1_decoration"></div>
+                            <div class="title1">“核酸码”不稳定？上海：已对其进行优化，满足市民申领“核酸码”不同需求</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 167px;" class="title1_decoration"></div>
+                            <div class="title1">上海：对于出院和解除医学观察人员，属地必须做好对接，不得阻拦其回家</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 219px;" class="title1_decoration"></div>
+                            <div class="title1">斯里兰卡：经济危机引发政局动荡</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 270px;" class="title1_decoration"></div>
+                            <div class="title1">美国佐治亚州一射击场遭抢劫 3人死亡 大量武器被盗</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 320px;" class="title1_decoration"></div>
+                            <div class="title1">美国首都华盛顿疫情反弹 多名美政要感染新冠病毒</div>
+                        </a>
+                        <a href="">
+                            <div style="top: 371px;" class="title1_decoration"></div>
+                            <div class="title1">美国首都华盛顿疫情反弹 多名美政要感染新冠病毒</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="rt">
+                    <div class="news_title">
+                        <a href=""></a>
+                        <h2 style="margin-left: -10px;">国际</h2>
+                    </div>
+                    <a href="/news" target="_blank">
+                        <div class="more">
+                            MORE+
+                        </div>
+                    </a>
+                    <div>
+                        <div class="row_container">
+                            <a href="">
+                                <div class="right_left">
+                                    <img th:src="@{/img/home_new_01.jpg}">
+                                </div>
+                            </a>
+                            <div class="right_right">
+                                <a href="">
+                                    <div class="title">时隔21个月！打破军方高层沟通僵局，中美防长通话管控风险</div>
+                                </a>
+                                <a href="">
+                                    <div class="info">
+                                        20日，国务委员兼国防部长魏凤和应约同美国国防部长奥斯汀通电话，这是拜登政府上台来中美防长首次通话。上一次中美防长通话是2020年8月魏凤和与特朗普政府国防部长埃斯珀进行的，至今已有近21个月。
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row_container">
+                            <a href="">
+                                <div class="right_left">
+                                    <img th:src="@{/img/home_new_02.jpg}">
+                                </div>
+                            </a>
+
+                            <div class="right_right">
+                                <a href="">
+                                    <div class="title">新华国际时评：中国将继续为世界经济贡献宝贵确定性</div>
+                                </a>
+                                <a href="">
+                                    <div class="info">
+                                        今年一季度，中国进出口同比增长10.7%，与世界分享中国大市场的同时，向全球输送高性价比的中国产品。外贸数据稳，彰显中国作为"世界工厂"和"世界市场"的全球红利，在全球高通胀背景下尤为可贵。
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row_container">
+                            <a href="">
+                                <div class="right_left">
+                                    <img th:src="@{/img/home_new_03.jpg}">
+                                </div>
+                            </a>
+                            <div class="right_right">
+                                <a href="">
+                                    <div class="title">世界地球日：三张图看懂中国为减碳付出了什么</div>
+                                </a>
+                                <a href="">
+                                    <div class="info">
+                                        2022年4月22日是第53个世界地球日，今年的宣传主题是"珍爱地球 人与自然和谐共生"。世界地球日的宗旨是唤起人类爱护地球、保护家园的意识，促进资源开发与环境保护的协调发展，进而改善地球的整体环境。
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- 时事新闻结束 -->
+    <!-- 红色河海开始 -->
+    <section class="hohai w">
+        <a style="top: -10px;" class="a_hohai" name="hohai"></a>
+        <div class="hohai_news w">
+            <div style="padding-top: 100px;padding-bottom: 120px;" class="biaoti_head w">
+                <div style="top: 119px;" class="dash_left"></div>
+                <div class="biaoti_left"></div>
+                <div style="top: 116px;" class="dot_left"></div>
+                <div class="biaoti">红色河海</div>
+                <div style="top: 116px;" class="dot_right"></div>
+                <div class="biaoti_right"></div>
+                <div style="top: 119px;" class="dash_right"></div>
+            </div>
+            <!-- 开源代码开始 -->
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide aa1"></div>
+                    <div class="swiper-slide aa2"></div>
+                    <div class="swiper-slide aa3"></div>
+                    <div class="swiper-slide aa4"></div>
+                    <div class="swiper-slide aa5"></div>
+                    <div class="swiper-slide aa6"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script th:src="@{/js/swiper.min.js}"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    autoplay: true,
+                });
+            </script>
+
+            <!-- 开源代码结束 -->
+        </div>
+    </section>
+    <!-- 红色河海结束 -->
+
+</body>
+
+</html>

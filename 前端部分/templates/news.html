@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时事新闻</title>
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <!-- 引入新闻样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/news.css}" />
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/swiper-bundle.min.css}" />
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" th:href="@{/download/icon/iconfont.css}">
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" th:href="@{css/swiper-bundle.min.css}" />
+    <!-- 引入jquery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 引入新闻js -->
+    <script th:src="@{/js/news.js}"></script>
+</head>
+
+<body>
+    <!-- 分类栏开始 -->
+    <div class="classify">
+        <div class="kinds w">
+            <ul>
+                <a href="../">
+                    <li class="topic">时事新闻</li>
+                </a>
+                <a href="../article/category/1">
+                    <li class="military">军事</li>
+                </a>
+                <a href="../article/category/2">
+                    <li class="people">经济</li>
+                </a>
+                <a href="../article/category/3">
+                    <li class="economy">国际</li>
+                </a>
+                <a href="../article/category/4">
+                    <li class="society">科技</li>
+                </a>
+                <a href="../article/category/5">
+                    <li class="internation">文化</li>
+                </a>
+            </ul>
+            <a href="../">
+                <li class="back_to_home">返回首页</li>
+            </a>
+        </div>
+    </div>
+    <!-- 分类栏结束 -->
+    <div class="back">
+        <li class="backToTop"><span class="iconfont icon-huidaodingbu toTop"></span>
+            <p>回到顶部</p>
+        </li>
+        <li class="loginReg"><span class="iconfont icon-denglu toLogin"></span>发表文章</li>
+    </div>
+    <!-- 主体部分开始 -->
+    <div style="padding-top: 0;" class="news_body">
+        <div class="bgc"></div>
+        <div class="news_bd w">
+            <div class="bd_left fl">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <p>海拔4500米 红色基因助力主题教育走深走实</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>社区“战疫” 他们有“三宝”</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>央行决定下调金融机构外汇存款准备金率到8%</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>探索浩瀚宇宙，总书记这样关心航天事业</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <p>广西柳州：融江“泾渭分明”</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="bd_right fl">
+                <!-- 开源代码开始 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img th:src="@{/img/newTop1.jpg}" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img th:src="@{/img/newTop2.jpg}" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img th:src="@{/img/newTop3.jpg}" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img th:src="@{/img/newTop4.jpg}" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img style="width: 785px;height: 440px;" th:src="@{/img/newTop5.jpg}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script th:src="@{/js/swiper-bundle.min.js}"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        loop: true,
+                        autoplay: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+                <!-- 开源代码结束 -->
+            </div>
+        </div>
+        <div class="news_list w">
+            <h1 style="font-family: PingFangSC-Regular, Helvetica, Arial, Microsoft Yahei, sans-serif;color:#333">最新新闻</h1>
+            <div class="new_left w">
+                <a class="a_image fl" href="#">
+                    <div class="image">
+                        <img th:src="@{/img/new1.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="#">
+                        震撼！“海基一号”平台主体安装完工
+                    </a></h2>
+
+                    <a class="a_brief" href="../login">
+                        <p class="brief">浪花翻涌，波涛阵阵。南海之上，一座高度超过北京国贸大厦，重量近4万吨的原油钻采平台正在紧锣密鼓建设着。</p>
+                    </a>
+                    <div class="new_bottom">
+                        <li class="date fl">2022-04-26</li>
+                        <li class="country fl">海基一号</li>
+                        <li class="type fl"></li>
+                    </div>
+                </div>
+            </div>
+            <div class="new_left w">
+                <a class="a_image fl" href="../single_news">
+                    <div class="image">
+                        <img th:src="@{/img/new2.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="single_news.html">
+                        勇于攀登航天科技高峰
+                    </a></h2>
+
+                    <a class="a_brief" href="single_new.html">
+                        <p class="brief">2020年4月23日，习近平总书记给孙家栋、王希季等参与“东方红一号”任务的老科学家回信时指出，老一代航天人的功勋已经牢牢铭刻在新中国史册上。</p>
+                    </a>
+                    <div class="new_bottom">
+                        <li class="date fl">2022-04-24</li>
+                        <li class="country fl">航天</li>
+                        <li class="type fl">孙家栋</li>
+                    </div>
+                </div>
+            </div>
+            <div class="new_left w">
+                <a class="a_image fl" href="#">
+                    <div class="image">
+                        <img th:src="@{/img/new3.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="#">
+                        人民海军成立73周年｜我们在战位报告！
+                    </a></h2>
+
+                    <a class="a_brief" href="#">
+                        <p class="brief">海军官兵在战位向祖国和全国人民报告：海防有我，请党和人民放心！</p>
+                    </a>
+                    <div class="new_bottom">
+                        <li class="date fl">2022-04-25</li>
+                        <li class="country fl">人民海军</li>
+                        <li class="type fl">战位报告</li>
+                    </div>
+                </div>
+            </div>
+            <div class="new_left w">
+                <a class="a_image fl" href="#">
+                    <div class="image">
+                        <img th:src="@{/img/new4.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="#">
+                        一季度物价保持平稳，未来走势如何？使官兵在阅读中获取知识 培养独立思考能力</h2>
+
+                    <a class="a_brief" href="#">
+                        <p class="brief">该支队通过好书推荐、体会交流、演讲朗诵等丰富多彩的形式，积极引导官兵培养阅读习惯，提升阅读兴趣。</p>
+                    </a>
+                        <div class="new_bottom">
+                            <li class="date fl">2022-04-25</li>
+                            <li class="country fl">读书日</li>
+                            <li class="type fl">阅读习惯</li>
+                        </div>
+                </div>
+            </div>
+            <div class="new_left w">
+                <a class="a_image fl" href="#">
+                    <div class="image">
+                        <img th:src="@{/img/new5.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="#">
+                        潘际銮：把一生与祖国需要紧紧“焊”在一起
+                    </a></h2>
+
+                    <a class="a_brief" href="#">
+                        <p class="brief">又见四月天，清华园里草长莺飞、繁花盛开。在机械工程系系馆，那间堆满了书籍、资料的院士办公室，却再也无法等到它的主人。</p>
+                    </a>
+                    <div class="new_bottom">
+                        <li class="date fl">2022-04-24</li>
+                        <li class="country fl">潘际銮</li>
+                        <li class="type fl">焊接</li>
+                    </div>
+                </div>
+            </div>
+            <div class="new_left w">
+                <a class="a_image fl" href="#">
+                    <div class="image">
+                        <img th:src="@{/img/new6.jpg}" alt="">
+                    </div>
+                </a>
+                <div class="new_right fl">
+                    <h2 class="h_topic"><a class="a_topic" href="#">
+                        商务部：择优选择部分地区开展内外贸一体化试点
+                    </a></h2>
+
+                    <a class="a_brief" href="#">
+                        <p class="brief">近期商务部将会同有关部门择优选择部分地区开展内外贸一体化试点，形成一批可复制推广经验做法，以点带面推进全国内外贸一体化发展。</p>
+                    </a>
+                    <div class="new_bottom">
+                        <li class="date fl">22022-04-22</li>
+                        <li class="country fl">商务部</li>
+                        <li class="type fl">内外贸一体化</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体部分结束 -->
+</body>
+
+</html>

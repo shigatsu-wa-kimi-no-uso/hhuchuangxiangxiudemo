@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录/注册</title>
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <!-- 引入登录样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css?id=1}" />
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" th:href="@{/download/icon-icon/iconfont.css}">
+    <link rel="stylesheet" th:href="@{/download/icon/iconfont.css}">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/login.js?id=2}"></script>
+</head>
+
+<body>
+    <!-- 登陆界面开始 -->
+    <div class="login_body w">
+        <!-- 导航栏开始 -->
+        <div class="nav">
+            <div class="nav_nav w">
+                <ul class="fl">
+                    <li><a href="">首页</a></li>
+                    <li><a href="https://www.sohu.com/a/466400260_100083694" target="_blank">回顾百年党史</a></li>
+                    <li><a href="https://www.xyforex.com.cn/hot/279155" target="_blank">礼赞全新时代</a></li>
+                    <li>
+                        <a href="javascript:;"><img th:src="@{/img/login-logo.png}" alt="图片无法显示"></a>
+                    </li>
+                    <li><a href="./news" target="_blank">时事新闻</a></li>
+                    <li><a href="https://www.hhu.edu.cn/" target="_blank">红色河海</a></li>
+                    <li><a href="./login" target="_blank">登录/注册</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 导航栏结束 -->
+        <div style="margin-top: 150px;" class="login_body1">
+            <div class="login_body2">
+                <div class="body2">
+                    <h1 class="welcome">欢迎回来</h1>
+                    <span class="iconfont icon-yonghu"></span>
+                    <span id="testname"></span>
+                    <!-- <span class="test_name">请输入以字母开头的8至16位账号</span> -->
+                    <p class="zhanghao_p">账号</p><input type="text" onblur="get('zhanghao')" class="zhanghao" placeholder="用户名" value="" />
+
+                    <span class="iconfont icon-mima"></span>
+                    <span id="testpwd"></span>
+                    <!-- <span class="test_pwd">请输入8至16位密码</span> -->
+                    <p class="mima_p">密码</p><input type="password" onblur="get('mima')" class="mima" placeholder="请输入登录密码" value="" />
+                    <button class="denglu login_button" type="button">登录</button>
+                    <a class="forget" href="#">忘记密码？</a>
+                </div>
+            </div>
+            <div class="register">
+                <p class="note">还未注册?</p>
+                <p class="note2">立即注册，了解更多吧！</p>
+                <a href="javascript:;">
+                    <div class="regist">注册</div>
+                </a>
+            </div>
+        </div>
+        <!-- 登陆界面结束 -->
+
+        <!-- 注册界面开始 -->
+        <div style="margin-top: 110px;" class="register_body1">
+            <div style="top: 39%;" class="register_body2">
+                <div class="body3">
+                    <h1 class="right_register">立即注册</h1>
+                    <span class="reg-yh iconfont icon-yonghu"></span>
+                    <span id="testregname"></span>
+                    <p class="name">用户名</p>
+                    <input class="regreg register_zhanghao" type="text" onblur="get('regname')" placeholder="用户名/昵称" />
+                    <span class="reg-email iconfont icon-youxiang"></span>
+                    <span id="testEmail"></span>
+                    <p class="number">邮箱</p>
+                    <input class="regreg register_email" type="text" onblur="get('Email')" placeholder="请输入邮箱" />
+                    <span class="reg-pwd iconfont icon-mima"></span>
+                    <span id="testpwd2"></span>
+                    <p class="password1">密码</p>
+                    <input class="regreg register_mima_again" type="password" onblur="get('pwd2')" placeholder="请输入密码" />
+                    <span class="reg-pwd2 iconfont icon-mima ">
+
+					</span>
+                    <span id="testpwd3"></span>
+                    <p class="password2">确认密码</p>
+                    <input class="regreg register_mima" type="password" onblur="get('pwd3')" placeholder="请再次输入密码" />
+                    <span id="testcode"></span>
+                    <p class="vertify_code">验证码</p>
+                    <input class="regreg vertify" type="number" onblur="get('ucode')" placeholder="请输入验证码" />
+                    <div class="require">获取验证码</div>
+                    <div id="btn"></div>
+                    <button style="margin-top: 25px;" class="denglu register_button" type="button">注册</button>
+                </div>
+            </div>
+            <div style="top: 39%;" class="register2">
+                <p class="note">已有帐号?</p>
+                <p class="note2">好久不见，赶快登录吧！</p>
+                <a href="javascript:;">
+                    <div class="regist2">登录</div>
+                </a>
+            </div>
+        </div>
+        <!-- 注册界面结束 -->
+    </div>
+</body>
+
+</html>

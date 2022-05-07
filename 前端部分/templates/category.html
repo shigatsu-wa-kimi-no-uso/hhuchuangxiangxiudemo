@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时事新闻</title>
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <!-- 引入新闻样式文件 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/news.css}" />
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/swiper-bundle.min.css}" />
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" type="text/css" th:href="@{/logo.ico}" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" th:href="@{/download/icon/iconfont.css}">
+    <!-- 引入轮播图 -->
+    <link rel="stylesheet" th:href="@{/css/swiper-bundle.min.css}" />
+    <!-- 引入jquery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 引入新闻js -->
+    <script th:src="@{/js/category.js?id=2}"></script>
+</head>
+
+
+<body>
+    <!-- 分类栏开始 -->
+    <div class="classify">
+        <div class="kinds w">
+            <ul>
+                <a href="../../news">
+                    <li class="topic">时事新闻</li>
+                </a>
+                <a href="./1">
+                    <li class="military">军事</li>
+                </a>
+                <a href="./2">
+                    <li class="people">经济</li>
+                </a>
+                <a href="./3">
+                    <li class="economy">国际</li>
+                </a>
+                <a href="./4">
+                    <li class="society">科技</li>
+                </a>
+                <a href="./5">
+                    <li class="internation">文化</li>
+                </a>
+            </ul>
+            <a href="../">
+                <li class="back_to_home">返回首页</li>
+            </a>
+        </div>
+    </div>
+    <!-- 分类栏结束 -->
+    <div class="back">
+        <li class="backToTop"><span class="iconfont icon-huidaodingbu toTop"></span>
+            <p>回到顶部</p>
+        </li>
+        <li class="loginReg"><span class="iconfont icon-denglu toLogin"></span>发表文章</li>
+    </div>
+    <div class="affairs_body"></div>
+</body>
+
+</html>
