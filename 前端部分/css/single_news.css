@@ -1,0 +1,253 @@
+/* 分类栏开始 */
+
+.classify {
+    width: 100%;
+    height: 60px;
+    background-color: #b8242c;
+}
+
+.kinds ul li {
+    height: 60px;
+    float: left;
+    color: #cda06a;
+    font-size: 20px;
+    line-height: 60px;
+    text-indent: 55px;
+}
+
+.kinds ul .topic {
+    color: #fff;
+}
+
+.kinds ul .topic {
+    float: left;
+    font-size: 26px;
+    margin-right: 40px;
+}
+
+.kinds ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 分类栏结束 */
+
+.single_new_body {
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.single_topic {
+    width: 960px;
+    color: #333333;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-overflow: clip!important;
+    word-break: break-all;
+    font-size: 18px!important;
+}
+
+.editormd-html-preview,
+.editormd-preview-container {
+    width: 1000px!important;
+}
+
+.ciyun {
+    position: relative;
+}
+
+.ciyun_img {
+    width: 400px;
+    height: 330px;
+    margin-left: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../news/news/词云图/txt词云图1.jpg);
+    background-position: 48% 27%;
+}
+
+.commentWC {
+    width: 280px;
+    height: 250px;
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    border: 1px solid skyblue;
+    background-repeat: no-repeat;
+    background-image: url(../news/news/词云图/txt词云图1.jpg);
+    background-size: 156%;
+    background-position: 51% 23%;
+}
+
+.decoration {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -66px;
+    right: 140px;
+    background-color: #fff;
+    border-right: 1px solid skyblue;
+    border-bottom: 1px solid skyblue;
+    transform: rotate(45deg);
+}
+
+.comment_ciyun {
+    display: none;
+}
+
+.ciyun .ciyun_topic,
+.comment_topic {
+    font-size: 26px;
+    color: #333333;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.comment .pinglunqu {
+    border: 1px solid #ececeb;
+    border-radius: 5px;
+    background-color: #f4f5f7;
+    margin-left: 260px;
+    margin-top: 38px;
+    color: #333333;
+    font-size: 18px;
+}
+
+.comment {
+    position: relative;
+}
+
+.ul_comment {
+    width: 1000px;
+    margin-left: 100px;
+    padding-bottom: 100px;
+}
+
+.button1 {
+    width: 100px;
+    height: 80px;
+    background-color: skyblue;
+    position: absolute;
+    right: 245px;
+    top: 77px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.commentWordCloud {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    top: 68px;
+    border-radius: 50%;
+    background-color: rgb(64, 177, 222);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.comment .comment_icon {
+    position: absolute;
+    top: 56px;
+    left: 125px;
+    font-size: 80px;
+}
+
+.infoText {
+    white-space: normal;
+    width: 620px;
+    word-break: break-all;
+    padding-bottom: 30px;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333333;
+}
+
+.single_comment {
+    width: 700px;
+    margin-left: 160px;
+    margin-top: 30px;
+    border-top: 1px solid #e5e9ef;
+    padding-top: 20px;
+    position: relative;
+}
+
+.single_comment:last-child {
+    margin-bottom: 100px;
+}
+
+.single_comment:first-child {
+    margin-top: 50px;
+}
+
+.single_comment .infoDel {
+    color: #999;
+    position: absolute;
+    left: 260px;
+    bottom: 0px;
+    font-size: 14px;
+}
+
+.single_comment .span_icon,
+.single_comment .i_icon {
+    font-size: 20px;
+    position: absolute;
+    left: 160px;
+    bottom: -4px;
+    color: #87ceeb;
+    cursor: pointer;
+}
+
+.single_comment .i_icon {
+    left: 215px;
+    font-size: 18px;
+}
+
+.comment .zan_number {
+    position: absolute;
+    font-size: 16px;
+    left: 183px;
+    bottom: -3px;
+    cursor: default;
+}
+
+.infoOperation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #9fa8af;
+    font-size: 16px;
+}
+
+.noDel {
+    display: none;
+}
+
+.username {
+    width: 300px;
+    height: 20px;
+    font-size: 18px;
+    color: #6d757a;
+}
+
+.picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: -74px;
+    top: 12px;
+}

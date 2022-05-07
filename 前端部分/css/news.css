@@ -1,0 +1,394 @@
+body {
+    background-color: #fff;
+}
+
+.nav {
+    position: relative;
+}
+
+
+/* 分类栏开始 */
+
+.classify {
+    width: 100%;
+    height: 60px;
+    background-color: #b8242c;
+}
+
+.kinds ul li {
+    height: 60px;
+    float: left;
+    color: #cda06a;
+    font-size: 20px;
+    line-height: 60px;
+    text-indent: 55px;
+}
+
+.kinds ul .topic {
+    color: #fff;
+}
+
+.kinds ul .topic {
+    float: left;
+    font-size: 26px;
+    margin-right: 40px;
+}
+
+.kinds ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.back_to_home {
+    width: 80px;
+    height: 60px;
+    float: left;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 60px;
+    margin-left: 425px;
+}
+
+
+/* 分类栏结束 */
+
+
+/* 主体部分开始 */
+
+.bgc {
+    background-image: linear-gradient(to bottom, #ee7f95, #ffffff);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.news_bd {
+    height: 490px;
+    padding-top: 40px;
+}
+
+.bd_left {
+    width: 415px;
+    height: 440px;
+    background: #cd3840;
+}
+
+.bd_left ul li p {
+    width: 390px;
+    height: 88px;
+    line-height: 88px;
+    font-size: 18px;
+    color: #cda06a;
+    text-indent: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bd_left ul li p:hover {
+    color: #fff;
+}
+
+.bd_left ul li p:hover {
+    transform: translateX(10px);
+    transition: all .4s;
+}
+
+.bd_right {
+    width: 785px;
+    height: 440px;
+}
+
+
+/* 开源代码开始 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 开源代码结束 */
+
+.news_list {
+    height: 600px;
+}
+
+.new_left {
+    height: 200px;
+    background-color: #fff;
+    border-bottom: 1px #e4e4e4 solid;
+    padding: 20px;
+}
+
+.new_left:hover {
+    background-color: #f8f8f8;
+}
+
+.new_right {
+    width: 860px;
+    height: 90px;
+    margin-left: 20px;
+    font-family: PingFangSC-Regular, Helvetica, Arial, Microsoft Yahei, sans-serif;
+}
+
+.image img {
+    width: 275px;
+    height: 155px;
+    border-radius: 5px;
+}
+
+.new_left a {
+    color: #333333;
+}
+
+.new_left a:hover,
+h3:hover {
+    text-decoration: underline;
+}
+
+.news_list .h_topic {
+    font-size: 20px;
+}
+
+.brief {
+    width: 816px;
+    height: 52px;
+    margin: 10px 50px auto auto;
+    line-height: 26px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.new_bottom {
+    width: 860px;
+    height: 25px;
+    margin-top: 40px;
+}
+
+.new_bottom li {
+    color: #999999;
+    font-size: 14px;
+}
+
+.new_bottom li:first-child {
+    margin-right: 40px;
+}
+
+.new_bottom li:nth-child(2) {
+    margin-right: 10px;
+}
+
+
+/* 主体部分结束 */
+
+
+/* 单个新闻界面开始 */
+
+.single_new_body {
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.single_topic {
+    width: 1000px;
+    color: #333333;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.content p {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: #333333;
+    word-break: break-all;
+}
+
+.ciyun_img {
+    width: 400px;
+    height: 330px;
+    margin-left: 100px;
+    background: no-repeat url(../news/news/词云图/txt词云图1.jpg);
+    background-position: 48% 27%;
+}
+
+.ciyun .ciyun_topic,
+.comment_topic {
+    font-size: 26px;
+    color: #333333;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.comment .pinglunqu {
+    border: 1px solid #ececeb;
+    margin-left: 260px;
+    margin-top: 38px;
+    color: #333333;
+    font-size: 18px;
+}
+
+.comment {
+    position: relative;
+}
+
+.ul_comment {
+    width: 1000px;
+    margin-left: 100px;
+    padding-bottom: 120px;
+}
+
+#button1 {
+    width: 100px;
+    height: 80px;
+    background-color: skyblue;
+    position: absolute;
+    right: 140px;
+    top: 77px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.comment .comment_icon {
+    position: absolute;
+    top: 56px;
+    left: 125px;
+    font-size: 80px;
+}
+
+.single_comment {
+    width: 700px;
+    height: 100px;
+    margin-left: 160px;
+    margin-top: 30px;
+    border-top: 1px solid #e5e9ef;
+    padding-top: 20px;
+    position: relative;
+}
+
+.single_comment:last-child {
+    margin-bottom: 100px;
+}
+
+.single_comment:first-child {
+    margin-top: 50px;
+}
+
+.single_comment a {
+    color: #999;
+    position: absolute;
+    left: 172px;
+    bottom: 8px;
+}
+
+.single_comment .span_icon,
+.single_comment .i_icon {
+    font-size: 20px;
+    position: absolute;
+    bottom: 3px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.single_comment .i_icon {
+    left: 110px;
+    font-size: 18px;
+}
+
+.comment .zan_number,
+.comment .cai_number {
+    position: absolute;
+    font-size: 16px;
+    left: -30px;
+    bottom: 2px;
+    cursor: default;
+}
+
+.comment .cai_number {
+    left: 28px;
+}
+
+.back {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(93, 156, 236, 0.8);
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+}
+
+.backToTop,
+.loginReg {
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.backToTop {
+    line-height: 100px;
+}
+
+.loginReg {
+    line-height: 60px;
+}
+
+.back .toTop {
+    position: absolute;
+    top: -25px;
+    left: 18px;
+    font-size: 30px;
+}
+
+.backToTop p {
+    margin-left: -14px;
+}
+
+
+/* 单个新闻界面结束 */

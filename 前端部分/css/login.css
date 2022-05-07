@@ -1,0 +1,366 @@
+/* login开始 */
+
+
+/* 头部开始 */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.login_body {
+    width: 1519px;
+    height: 800px;
+    background: url(../img/login.jpg);
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.login_body1,
+.register_body1 {
+    height: 600px;
+    position: relative;
+}
+
+.welcome,
+.right_register {
+    display: inline-block;
+    color: #3c3c3c;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 82px;
+}
+
+.login_body2,
+.register_body2 {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    top: 32%;
+    margin-top: -150px;
+    left: 50%;
+    /* background-image: linear-gradient(to bottom, #a1c5f6, #e7e6f1); */
+    border: 6px solid #cfa972;
+    background-color: #f0e6d8;
+}
+
+.body2,
+.body3 {
+    position: absolute;
+    margin: 14px 25px 23px 112px;
+}
+
+.body2 {
+    margin-top: 25px;
+}
+
+.zhanghao_p,
+.mima_p,
+.name,
+.number,
+.password1,
+.password2,
+.vertify_code {
+    position: absolute;
+    left: -48px;
+    top: 69px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+.vertify_code {
+    top: 291px;
+    left: -60px;
+}
+
+.mima_p {
+    top: 146px;
+}
+
+.zhanghao,
+.register_zhanghao,
+.register_email,
+.register_mima_again,
+.register_mima,
+.mima {
+    width: 300px;
+    height: 42px;
+    padding-left: 50px;
+    border: 1px solid #f1eeee;
+    background-color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+
+.register_zhanghao,
+.register_email,
+.register_mima_again,
+.register_mima {
+    padding-left: 42px;
+}
+
+.register_email,
+.register_mima_again,
+.register_mima {
+    margin-top: 5px;
+}
+
+.denglu {
+    width: 260px;
+    height: 36px;
+    background-color: #d8b076;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 18px;
+}
+
+.login_button {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+}
+
+.forget {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    bottom: -90px;
+    font-size: 16px;
+}
+
+.register,
+.register2 {
+    position: absolute;
+    right: 109px;
+    top: 32%;
+    width: 150px;
+    height: 350px;
+    background-image: url(../img/right.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border: 6px solid #cfa972;
+    border-left: none;
+}
+
+.note {
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    /* color: #3c3c3c; */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.note2 {
+    font-size: 12px;
+    text-align: center;
+    /* color: #3c3c3c; */
+    color: #ffffff;
+}
+
+.regist,
+.regist2 {
+    position: absolute;
+    bottom: 80px;
+    left: 37px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px #ffffff solid;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#alert {
+    display: none;
+}
+
+
+/* login结束 */
+
+
+/* 注册开始 */
+
+.regreg {
+    width: 280px;
+    height: 33px;
+}
+
+.register_body2 {
+    height: 420px;
+}
+
+.register2 {
+    height: 420px;
+}
+
+.register_body1 {
+    display: none;
+}
+
+.name {
+    top: 65px;
+    left: -60px;
+}
+
+.number {
+    top: 123px;
+    left: -43px;
+}
+
+.password1 {
+    top: 180px;
+    left: -43px;
+}
+
+.password2 {
+    top: 238px;
+    left: -79px;
+}
+
+.iconfont {
+    font-size: 20px!important;
+}
+
+.icon-yonghu {
+    position: absolute;
+    top: 62px;
+    left: 1px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.icon-mima {
+    position: absolute;
+    top: 140px;
+    left: 1px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.reg-yh,
+.reg-pwd,
+.reg-pwd2,
+.reg-email {
+    position: absolute;
+    top: 62px;
+    left: 1px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-color: #cccccc;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.reg-pwd {
+    top: 178px;
+    left: 1px;
+}
+
+.reg-pwd2 {
+    top: 235px;
+    left: 1px;
+}
+
+.reg-email {
+    top: 119px;
+    left: 1px;
+}
+
+.test_name {
+    display: none;
+    position: absolute;
+    /* border: 1px solid purple; */
+    top: 110px;
+    left: 40px;
+    color: red;
+}
+
+#testname,
+#testpwd,
+#testregname,
+#testEmail,
+#testpwd2,
+#testpwd3,
+#testcode {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    /* border: 1px purple solid; */
+    font-size: 20px;
+}
+
+#testpwd {
+    top: 145px;
+}
+
+#testEmail {
+    top: 119px;
+}
+
+#testpwd2 {
+    top: 176px;
+}
+
+#testpwd3 {
+    top: 236px;
+}
+
+#testcode {
+    top: 290px;
+    right: 127px;
+}
+
+.body3 .vertify {
+    padding-left: 5px;
+    font-size: 14px;
+    color: #757575;
+    width: 190px;
+}
+
+.require {
+    position: absolute;
+    bottom: 69px;
+    right: 70px;
+}
+
+.require:hover {
+    color: #ff5000;
+    cursor: pointer;
+}
+
+#btn {
+    display: none;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left: 210px;
+    bottom: 67px;
+    text-indent: 10px;
+}
+
+
+/* 注册结束 */

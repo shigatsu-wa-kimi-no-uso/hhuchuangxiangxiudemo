@@ -1,0 +1,738 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.back {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(93, 156, 236, 0.8);
+    position: fixed;
+    bottom: 100px;
+    top: 550px;
+    right: 25px;
+    z-index: 10;
+}
+
+.backToTop {
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-indent: 18px;
+    position: relative;
+    line-height: 116px;
+}
+
+.back .toTop {
+    position: absolute;
+    top: -26px;
+    left: 7px;
+    font-size: 30px;
+}
+
+
+/* body {
+    background-image: linear-gradient(to right, #c90506, #fff);
+} */
+
+.learn_body,
+.tribute_body,
+.news,
+.hohai {
+    position: relative;
+}
+
+
+/* 首页开始 */
+
+.home_body {
+    width: 1519px;
+    height: 700px;
+    background: url(../img/background.jpeg) no-repeat;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+
+/* 导航栏开始 */
+
+.current {
+    border-bottom: 2px #fff solid;
+}
+
+.nav {
+    /* position: sticky;
+    top: 0; */
+    width: 100%;
+    height: 100px;
+    background-color: #b8242c;
+    /* z-index: 20; */
+}
+
+.nav_nav {
+    height: 100px;
+    position: relative;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li:first-child a {
+    width: 100px;
+}
+
+.nav ul li:nth-child(7) a,
+.nav ul li:nth-child(5) a,
+.nav ul li:nth-child(6) a {
+    width: 162px;
+}
+
+.login-register a,
+.nav ul li a {
+    color: #cea871;
+    display: block;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #b8242c;
+}
+
+.login-register,
+.personal,
+.information {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav ul li a:hover {
+    color: #ffffff;
+}
+
+.toRight {
+    color: #cea871;
+    margin-left: 3px;
+}
+
+.personal {
+    color: #cea871;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.personal:hover {
+    cursor: pointer;
+}
+
+.information {
+    width: 150px;
+    height: 150px;
+    background-color: #b8242c;
+    position: absolute;
+    top: 100px;
+    right: 26px;
+    z-index: 3;
+    display: none;
+}
+
+.information .change,
+.information .log_out {
+    width: 149px;
+    height: 75px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 75px;
+    color: #cea871;
+}
+
+.information .change:hover,
+.information .log_out:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* 导航栏结束 */
+
+
+/* 首页结束 */
+
+
+/* 回顾百年党史开始 */
+
+.learn_body {
+    background-color: #fff;
+    position: relative;
+}
+
+
+/* 标题开始 */
+
+.biaoti_head {
+    position: relative;
+    padding-top: 70px;
+}
+
+.dash_left {
+    width: 500px;
+    height: 2px;
+    background-color: #ab322d;
+    position: absolute;
+    top: 89px;
+}
+
+.dash_right {
+    width: 500px;
+    height: 2px;
+    background-color: #ab322d;
+    position: absolute;
+    top: 89px;
+    right: 0;
+}
+
+.dot_left {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ad3631;
+    position: absolute;
+    left: 485px;
+    top: 86px;
+    z-index: 2;
+}
+
+.dot_right {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ad3631;
+    position: absolute;
+    left: 708px;
+    top: 86px;
+    z-index: 2;
+}
+
+.biaoti {
+    width: 210px;
+    height: 38px;
+    background-color: #fcf8d4;
+    position: absolute;
+    left: 50%;
+    margin-left: -105px;
+    color: #cd2429;
+    line-height: 38px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.biaoti_left {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: transparent #fcf8d4 transparent transparent;
+    border-style: solid;
+    border-width: 38px 15px 0 0;
+    left: 50%;
+    margin-left: -120px;
+    z-index: 1;
+}
+
+.biaoti_right {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: transparent transparent transparent #fcf8d4;
+    border-style: solid;
+    border-width: 0 0 38px 15px;
+    left: 50%;
+    margin-left: 105px;
+    z-index: 1;
+}
+
+
+/* 标题结束 */
+
+
+/* 党史开始 */
+
+.container2,
+.container3 {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    height: 400px;
+    padding-top: 80px;
+}
+
+.container3 {
+    margin-top: -50px;
+}
+
+.container2 .card,
+.container3 .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 25px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.container2 .card:hover,
+.container3 .card:hover {
+    height: 300px;
+}
+
+.container2 .card .imgBx,
+.container3 .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 144px;
+    top: -20px;
+    left: 5spx;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container2 .card .imgBx img,
+.container3 .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container2 .card .content2,
+.container3 .card .content2 {
+    position: relative;
+    margin-top: -140px;
+    padding: 30px 15px 10px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.content2 p {
+    font-size: 13px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.container2 .card:hover .content2,
+.container3 .card:hover .content2 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .3s;
+}
+
+.introduce {
+    position: absolute;
+    width: 260px;
+    bottom: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+
+/* 党史结束 */
+
+
+/* 回顾百年党史结束 */
+
+
+/* 礼赞全新时代开始 */
+
+.header h1 {
+    width: 250px;
+    height: 50px;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-family: '楷体';
+}
+
+.tribute_body {
+    position: relative;
+    background-color: #fff;
+}
+
+.tribution_top {
+    height: 390px;
+    padding-left: 25px;
+    padding-bottom: 60px;
+}
+
+.tribution_top ul li h3 {
+    margin: 10px auto 20px auto;
+    font-weight: 700;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box {
+    display: inline-block;
+    width: 260px;
+    height: 172px;
+    overflow: hidden;
+}
+
+.tribution_top ul li img:hover {
+    overflow: hidden;
+    transition: all .4s;
+    transform: scale(1.1);
+}
+
+.tribution ul li {
+    width: 282px;
+    padding: 0 20px;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    font-size: 14px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.tribution ul li img {
+    display: block;
+    width: 262px;
+    height: 175px;
+}
+
+
+/* 礼赞全新时代结束 */
+
+
+/* 时事新闻开始 */
+
+.news {
+    position: relative;
+}
+
+.news_news {
+    padding-top: 60px;
+    height: 700px;
+    background-color: #fff;
+}
+
+.news_body {
+    padding-top: 80px;
+}
+
+.next {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* 新闻开始 */
+
+.lf {
+    width: 47%;
+    float: left;
+}
+
+.news_title {
+    display: block;
+    text-align: center;
+    line-height: 94px;
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.lf .news_title h2,
+.rt .news_title h2 {
+    text-align: left;
+    padding: 31px 0 23px 83px;
+    font-weight: bold;
+    margin: 0 30px;
+    color: #fff;
+    line-height: 40px;
+    background: url(../img/标题logo.png) no-repeat;
+    font-size: 26px;
+    text-indent: 30px;
+}
+
+.title1 {
+    font-size: 17px;
+    color: #333;
+    width: 500px;
+    height: 51px;
+    line-height: 51px;
+    text-indent: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.title1:hover {
+    transform: translateX(10px);
+    transition: all .4s;
+    color: #ff5000;
+}
+
+.rt {
+    width: 48.33%;
+    float: right;
+    position: relative;
+}
+
+.row_container {
+    width: 500px;
+    height: 140px;
+}
+
+.news_title {
+    display: block;
+    text-align: center;
+    line-height: 94px;
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.right_left {
+    float: left;
+    width: 200px;
+    height: 115px;
+    overflow: hidden;
+}
+
+.right_left img:hover {
+    overflow: hidden;
+    transition: all .4s;
+    transform: scale(1.1);
+}
+
+.right_left img {
+    width: 200px;
+    height: 115px;
+    float: left;
+}
+
+.right_right .title {
+    font-size: 20px;
+    color: #333333;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 25px;
+}
+
+.right_right .info {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.right_right .title:hover,
+.right_right .info:hover {
+    color: #ff6942;
+}
+
+.title1_decoration {
+    width: 20px;
+    height: 20px;
+    background: url(../img/yuan_dian.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 46px;
+    top: 15px;
+}
+
+.left_body {
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    right: 100px;
+    top: 60px;
+    font-size: 20px;
+    color: #b8242c;
+}
+
+
+/* 新闻结束 */
+
+
+/* 时事新闻结束 */
+
+
+/* 红色河海开始 */
+
+.hohai {
+    position: relative;
+    height: 750px;
+    background-color: #fff;
+}
+
+.hohai_news {
+    height: 450px;
+}
+
+
+/* 开源代码开始 */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: pink;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+}
+
+.swiper-slide::before {
+    display: none;
+}
+
+.swiper-slide-active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .4) no-repeat center;
+    color: #fff;
+    height: 380px!important;
+    padding-top: 370px;
+}
+
+.aa1 {
+    background: url(../img/hohai1.png) no-repeat center;
+}
+
+.aa2 {
+    background: url(../img/hohai2.png) no-repeat center;
+}
+
+.aa3 {
+    background: url(../img/hohai3.png) no-repeat center;
+}
+
+.aa4 {
+    background: url(../img/hohai4.png) no-repeat center;
+}
+
+.aa5 {
+    background: url(../img/hohai5.png) no-repeat center;
+}
+
+.aa6 {
+    background: url(../img/hohai6.png) no-repeat center;
+}
+
+.aa1::before {
+    content: '红色故事林炯：壮志未酬赤子心';
+}
+
+.aa2::before {
+    content: '【红色故事】齐国庆：出师未捷血染雨花';
+}
+
+.aa3::before {
+    content: '【红色故事】严俦：五卅时期的南京学生联合会主席';
+}
+
+.aa4::before {
+    content: '【红色故事】曹锐：“河海”校园中首位学生党员';
+    width: 360px;
+    margin-left: 10px;
+}
+
+.aa5::before {
+    content: '【红色故事】张闻天：马克思主义在中国的早期传播者之一';
+}
+
+.aa6::before {
+    content: '【红色故事】沈泽民：中国共产党上海发起组成员之一';
+}
+
+.swiper-slide-active:hover::before {
+    display: block;
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1);
+}
+
+
+/* 开源代码结束 */
+
+
+/* 红色河海结束 */
