@@ -1,0 +1,56 @@
+
+spring:
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates
+    cache: false
+    encoding: UTF-8
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      enabled: true
+  mail:
+    host: smtp.qq.com
+    username: xgxyqahyq@qq.com
+    password: eluyadadlntadida
+    port: 587 #587 #@163.com 994 465
+    protocol: smtp
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.
+          debug: true
+  rest:
+    connection:
+      timeout: 10000 #ms
+    read:
+      timeout: 20000
+    url: http://127.0.0.1:8011/email
+  datasource:
+    url: jdbc:mysql://localhost:3307/userdata?characterEncoding=utf-8
+    username: root
+    password: kiminouso030221
+    driverClassName: com.mysql.jdbc.Driver
+
+
+  #second:
+    #datasource:
+      #url: jdbc:mysql://localhost:3306/article?characterEncoding=utf-8
+      #username: root
+      #password: kiminouso030221
+      ##driverClassName: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+    auto-mapping-behavior: partial
+
+
+
+
+
+
+
