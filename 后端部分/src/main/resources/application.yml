@@ -11,9 +11,9 @@ spring:
       enabled: true
   mail:
     host: smtp.qq.com
-    username: xgxyqahyq@qq.com
-    password: eluyadadlntadida
-    port: 587 #587 #@163.com 994 465
+    username: secrecy
+    password: secrecy
+    port: secrecy
     protocol: smtp
     default-encoding: UTF-8
     properties:
@@ -29,16 +29,16 @@ spring:
     url: http://127.0.0.1:8011/email
   datasource:
     url: jdbc:mysql://localhost:3307/userdata?characterEncoding=utf-8
-    username: root
-    password: kiminouso030221
+    username: secrecy
+    password: secrecy
     driverClassName: com.mysql.jdbc.Driver
 
 
   #second:
     #datasource:
       #url: jdbc:mysql://localhost:3306/article?characterEncoding=utf-8
-      #username: root
-      #password: kiminouso030221
+      #username: secrecy
+      #password: secrecy
       ##driverClassName: com.mysql.cj.jdbc.Driver
 
 mybatis:
